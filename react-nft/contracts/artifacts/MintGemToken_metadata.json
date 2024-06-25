@@ -16,6 +16,11 @@
 						"internalType": "string",
 						"name": "_symbol",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_metadataURI",
+						"type": "string"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -261,6 +266,30 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "gemTokenData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "gemTokenRank",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gemTokenType",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "tokenId",
 						"type": "uint256"
 					}
@@ -295,6 +324,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "metadataURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -487,7 +529,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "tokenId",
+						"name": "_tokenId",
 						"type": "uint256"
 					}
 				],
@@ -671,9 +713,6 @@
 				"tokenOfOwnerByIndex(address,uint256)": {
 					"details": "See {IERC721Enumerable-tokenOfOwnerByIndex}."
 				},
-				"tokenURI(uint256)": {
-					"details": "See {IERC721Metadata-tokenURI}."
-				},
 				"totalSupply()": {
 					"details": "See {IERC721Enumerable-totalSupply}."
 				},
@@ -810,11 +849,11 @@
 			]
 		},
 		"contracts/MintGemToken.sol": {
-			"keccak256": "0x813cf9ba7d43191802f21e30e37a68429c73e81baa8f2f891240924d8d822790",
+			"keccak256": "0xa501f9f9f52b0d315a42650c2531d7dda744954486f8b5802d7cbe6859732680",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://262c694ea109bbd63648223e0d4db3506d187aae3f781126418c26257dd2cfd3",
-				"dweb:/ipfs/QmVPhZkQPjWyrKPuEWiSWaejmebf9dCms4CrFQxYVNUg1t"
+				"bzz-raw://3eddac9fabf3660d762d7ca7c7e3e8c93f8491e7aa13c4bcf476ffd4afa9e588",
+				"dweb:/ipfs/QmVBR9UTL7neD718SW3pLJcHHkbwHdTebiibz5wQK3Fqpk"
 			]
 		}
 	},

@@ -8,7 +8,7 @@ contract MintGemToken is ERC721Enumerable{
     //메타 data 주소를 가질 URI
     string public metadataURI;
 
-    constructor(string memory _name, string memory _symbol, string memory _metadataURI) ERC(_name,_symbol){
+    constructor(string memory _name, string memory _symbol, string memory _metadataURI) ERC721(_name,_symbol){
         metadataURI = _metadataURI;
     }
 
